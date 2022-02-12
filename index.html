@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Library</title>
+    <!-- font-awesome -->
+    <link 
+    rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+    crossorigin="anonymous" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="/style/form.css" />
+  </head>
+  <body>
+        <div class="wrapper">
+            <header class="header">
+                <h1 id="title">freeCodeCamp Survey Form</h1>
+                <p id="description"> Thank you for taking the time to help us improve the platform</p>
+            </header>
+
+            <form class="form">
+                <div class="form__entry">
+                    <label for="name">Name
+                        <input type="text" name="name" class="form__input" placeholder="Enter your name ..." required> 
+                    </label>
+                </div>
+
+                <div class="form__entry">
+                    <label for="email">Email
+                        <input type="email" name="email" class="form__input" placeholder="email" required> 
+                    </label>
+                </div>
+
+                <div class="form__entry">
+                    <label for="age">Age<span>(Optional)</span>
+                        <input type="number" name="age" class="form__input" placeholder="Age.." min="18" max="100"> 
+                    </label>
+                </div>
+
+                <div class="form__entry">
+                <label for="options">Which option best describes your current role?</label>
+                <select name="languages" id="options" class="form__input">
+                  <option value="selectfrom">Selection from Options</option>
+                  <option value="student">Student</option>
+                  <option value="job">Fulltime Job</option>
+                  <option value="hidden">Prefer not to disclose</option>
+                  <option value="learner">Fulltime Learner</option>
+                  <option value="other">Other</option>
+                </select>
+                </div>
+                
+                <div class="form__entry">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                    <input type="radio" id="def" name="recommend" value="Definitely" checked class="radio-input">
+                        <label for="def">Definitely</label><br>
+                    <input type="radio" id="maybe" name="recommend" value="Maybe" class="radio-input">
+                        <label for="maybe">Maybe</label><br>
+                    <input type="radio" id="notsure" name="recommend" value="Not sure" class="radio-input">
+                        <label for="notsure">Not sure</label>
+                </div>
+                <br>
+                <div class="form__entry">
+                <label for="feature">What is your favorite feature of freeCodeCamp?</label>
+                <select name="features" id="feature" class="form__input">
+                  <option value="selectfrom" class="radio-input">Selection from Options</option>
+                  <option value="community" class="radio-input">Community</option>
+                  <option value="opensource" class="radio-input">Open Source</option>
+                  <option value="challanges" class="radio-input">Challanges</option>
+                  <option value="projects" class="radio-input">Projects</option>
+                </select>
+                </div>
+
+                <div class="form__entry">
+                <p>What would you like to see improved?<span>(Check all that apply)</span></p>
+                    <input type="checkbox" id="Front-end Projects" name="improve[]" value="Front-end Projects" class="checkbox-input">
+                        <label for="Front-end Projects">Front-end Projects</label><br>
+                    <input type="checkbox" id="Back-end Projects" name="improve[]" value="Back-end Projects" class="checkbox-input">
+                         <label for="Back-end Projects">Back-end Projects</label><br>
+                    <input type="checkbox" id="Data visualization" name="improve[]" value="Data visualization" class="checkbox-input">
+                         <label for="Data visualization">Data visualization</label><br>
+                    <input type="checkbox" id="Front-end Projects" name="improve[]" value="Front-end Projects" class="checkbox-input">
+                         <label for="Front-end Projects">Front-end Projects</label><br>
+                    <input type="checkbox" id="open" name="improve[]" value="open" class="checkbox-input">
+                        <label for="open">Open Source Community</label><br>
+                    <input type="checkbox" id="gitter" name="improve[]" value="gitter" class="checkbox-input">
+                        <label for="gitter">Gitter Help Room</label><br>
+                    <input type="checkbox" id="videso" name="improve[]" value="videos" class="checkbox-input">
+                        <label for="videos">Videos</label><br>
+                    <input type="checkbox" id="meetup" name="improve[]" value="meetup" class="checkbox-input">
+                        <label for="meetup">City Meetups</label><br>
+                    <input type="checkbox" id="wiki" name="improve[]" value="wiki" class="checkbox-input">
+                        <label for="wiki">Wiki</label><br>
+                    <input type="checkbox" id="forum" name="improve[]" value="forum" class="checkbox-input">
+                        <label for="forum">Forum</label><br>
+                    <input type="checkbox" id="additional" name="improve[]" value="additional" class="checkbox-input">
+                        <label for="additional">Additional Courses</label><br>
+                    </div>
+
+                    <div class="form__entry">
+                    <p>Any comments or suggestions?</p>
+                        <textarea id="review" name="review" rows="8" column="100" placeholder="Enter your feedback.."></textarea>
+                    </div>
+                    
+                    <div class="form__entry">
+                        <button type="submit" id="submit" name="submit">Submit</button>
+                    </div>
+
+
+            </form>
+
+        </div>
+
+    <!------------------------------ Functionality ------------------------------------->
+    <script src="/js/form.js"></script>
+
+  </body>
+</html>
