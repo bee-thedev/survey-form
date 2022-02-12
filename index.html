@@ -23,18 +23,18 @@
 
             <form class="survey-form">
                 <div class="form__entry">
-                    <label for="name">Name
+                    <label for="name" id="name-label">Name
                         <input type="text" name="name" id="name" class="form__input" placeholder="Enter your name ..." required> 
                     </label>
                 </div>
 
-                <div class="form__entry">
+                <div class="form__entry" id="email-label">
                     <label for="email">Email
                         <input type="email" name="email" id="email" class="form__input" placeholder="email" required> 
                     </label>
                 </div>
 
-                <div class="form__entry">
+                <div class="form__entry" id="number-label">
                     <label for="age">Age<span>(Optional)</span>
                         <input type="number" name="age" class="form__input" placeholder="Age.." min="18" max="100"> 
                     </label>
@@ -42,7 +42,7 @@
 
                 <div class="form__entry">
                 <label for="options">Which option best describes your current role?</label>
-                <select name="languages" id="options" class="form__input">
+                <select name="languages" id="dropdown" class="form__input">
                   <option value="selectfrom">Selection from Options</option>
                   <option value="student">Student</option>
                   <option value="job">Fulltime Job</option>
